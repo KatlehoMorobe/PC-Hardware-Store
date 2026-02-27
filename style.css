@@ -41,5 +41,20 @@ nav .menu{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    background: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.img{
+    background: url(bg-old-pcs.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
