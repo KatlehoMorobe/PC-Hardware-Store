@@ -1,71 +1,69 @@
+@font-face {
+  font-family: 'MyFont'; /* A name you choose */
+  src: url('fonts/TAN-Tangkiwood-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2A4759;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg-pcs-1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
 }
 
 nav{
-    position: fixed;
-    background: #1b1b1b;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 12;
-}
-
-nav .menu{
-    max-width: 1250px;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
-.menu .logo a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+.logo{
+    width: 200px;
 }
 
-.menu ul{
-    display: inline-flex;
-}
-
-.menu ul li{
+nav ul li{
+    display: inline-block;
     list-style: none;
-    margin-left: 7px;
+    margin: 10px 20px;
 }
 
-.menu ul li a{
-    text-decoration: none;
+nav ul li a{
     color: #fff;
+    text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.menu ul li a:hover{
-    background: #fff;
-    color: #000;
-}
-
-.img{
-    background: url(bg-old-pcs.jpg) no-repeat;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
     position: relative;
 }
 
-.img::before{
+nav ul li a::after{
     content: '';
+    width: 0;
+    height: 3px;
+    background: #DDDDDD;
     position: absolute;
-    height: 100%;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
 }
