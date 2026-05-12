@@ -84,3 +84,30 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-family: 'MyFont';
 }
+
+
+/* -----------------------POPULAR PRODUCTS-----------------------------*/
+
+#categories{
+    padding: 30px 0;
+}
+
+.category-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.category-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+}
+
+.category-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
