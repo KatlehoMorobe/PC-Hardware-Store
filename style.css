@@ -88,6 +88,38 @@ nav ul li a:hover::after{
 
 /* -----------------------POPULAR PRODUCTS-----------------------------*/
 
+
+
+.p-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-popular{
+    display: flex;
+    max-width: 720px;
+    background: #4d6e83;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+}
+
+.p-container .box-two .p-image{
+    height: 430px;
+    width: 300px;
+}
+
+.box-two .p-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -----------------------CATEGORIES-----------------------------*/
+
 #categories{
     padding: 30px 0;
 }
@@ -105,9 +137,30 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
 }
 
 .category-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+}
+
+.category-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.category-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.category-list div:hover{
+    background: #0e0d0d;
+    transform: translateY(-10px);
 }
