@@ -13,7 +13,7 @@
 }
 
 body{
-    background: #2A4759;
+    background: #000000;
     color: #fff;
 }
 
@@ -69,7 +69,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
     
 }
